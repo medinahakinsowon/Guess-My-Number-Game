@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Guess My Number</title>
+  </head>
+  <body>
+    <header>
+      <button class="btn new-game">New Game</button>
+      <div class="high-score">
+        <ion-icon name="trophy-outline"></ion-icon>
+        Highest Score:
+        <span class="current-high-score">0</span>
+      </div>
+    </header>
+    <section class="main-section">
+      <h2>Guess my Number</h2>
+      <p class="message">Guess a number between 1 - 20</p>
+      <div class="secret-number">?</div>
+    </section>
+    <section class="number-section">
+      <input
+        type="number"
+        class="input-number"
+        placeholder="Enter your guess"
+      />
+      <br />
+      <button class="btn btn-check">Check</button>
+    </section>
+    <section class="score-section">
+      <div class="score-div">
+        <p>Current Score: <span id="current-score">20</span></p>
+        <p>Attempts Left: <span id="attempts-left">10</span></p>
+      </div>
+    </section>
+  </body>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="script.js"></script>
+</html>
